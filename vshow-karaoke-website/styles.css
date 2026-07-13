@@ -26,8 +26,9 @@ body {
   margin: 0;
   min-width: 320px;
   background:
-    radial-gradient(circle at 82% 9%, rgba(40, 255, 155, 0.12), transparent 30rem),
-    radial-gradient(circle at 8% 28%, rgba(255, 56, 212, 0.18), transparent 26rem),
+    radial-gradient(circle at 82% 9%, rgba(132, 63, 255, 0.2), transparent 30rem),
+    radial-gradient(circle at 8% 28%, rgba(255, 56, 212, 0.26), transparent 26rem),
+    linear-gradient(180deg, rgba(54, 10, 72, 0.32), rgba(5, 0, 6, 0.8)),
     var(--black);
   color: var(--ink);
 }
@@ -113,8 +114,8 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.22;
-  filter: saturate(1.2) contrast(1.1) brightness(0.6);
+  opacity: 0.46;
+  filter: saturate(1.55) contrast(1.08) brightness(1.12) hue-rotate(7deg);
   transform: scale(1.04);
 }
 
@@ -129,12 +130,12 @@ a {
 
 .hero-video-fade.top {
   top: 0;
-  background: linear-gradient(to bottom, #050006, rgba(5, 0, 6, 0));
+  background: linear-gradient(to bottom, rgba(5, 0, 6, 0.72), rgba(5, 0, 6, 0));
 }
 
 .hero-video-fade.bottom {
   bottom: 0;
-  background: linear-gradient(to top, #050006, rgba(5, 0, 6, 0));
+  background: linear-gradient(to top, rgba(5, 0, 6, 0.58), rgba(5, 0, 6, 0));
 }
 
 .camera-space {
@@ -354,8 +355,9 @@ section:not(.hero-sequence) {
   padding-block: clamp(30px, 4vw, 50px) !important;
   margin-top: -1px;
   background:
-    linear-gradient(90deg, rgba(5, 0, 6, 0.55) 0%, rgba(5, 0, 6, 0.16) 48%, rgba(5, 0, 6, 0.04) 100%),
-    linear-gradient(180deg, rgba(5, 0, 6, 0), rgba(5, 0, 6, 0.2)),
+    radial-gradient(circle at 18% 35%, rgba(255, 56, 212, 0.26), transparent 22rem),
+    linear-gradient(90deg, rgba(16, 0, 22, 0.42) 0%, rgba(62, 11, 76, 0.18) 48%, rgba(20, 4, 35, 0.08) 100%),
+    linear-gradient(180deg, rgba(5, 0, 6, 0), rgba(25, 4, 36, 0.16)),
     url("./assets/karaoke-performance.jpg") center / cover;
 }
 
@@ -372,8 +374,8 @@ section:not(.hero-sequence) {
 .threshold-copy,
 .bottle-service > div {
   padding: clamp(18px, 3vw, 34px);
-  background: linear-gradient(180deg, rgba(5, 0, 6, 0.44), rgba(5, 0, 6, 0.2));
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: linear-gradient(180deg, rgba(28, 6, 42, 0.58), rgba(5, 0, 6, 0.24));
+  border: 1px solid rgba(255, 122, 232, 0.18);
   backdrop-filter: blur(8px);
 }
 
@@ -393,9 +395,10 @@ section:not(.hero-sequence) {
   min-height: auto;
   padding-block: clamp(42px, 5vw, 72px) !important;
   background:
-    radial-gradient(circle at 18% 20%, rgba(244, 197, 107, 0.16), transparent 24rem),
-    radial-gradient(circle at 82% 38%, rgba(255, 56, 212, 0.14), transparent 26rem),
-    linear-gradient(180deg, #060006, #050006);
+    radial-gradient(circle at 18% 20%, rgba(244, 197, 107, 0.18), transparent 24rem),
+    radial-gradient(circle at 82% 38%, rgba(255, 56, 212, 0.28), transparent 26rem),
+    radial-gradient(circle at 38% 88%, rgba(111, 52, 255, 0.22), transparent 30rem),
+    linear-gradient(180deg, #17051f, #070008);
   justify-items: stretch;
 }
 
@@ -431,8 +434,9 @@ section:not(.hero-sequence) {
 .rooms {
   padding-block: clamp(28px, 4vw, 52px) !important;
   background:
-    linear-gradient(90deg, rgba(5, 0, 6, 0.18) 0%, rgba(5, 0, 6, 0.62) 42%, rgba(5, 0, 6, 0.96) 100%),
-    linear-gradient(180deg, rgba(5, 0, 6, 0.1), rgba(5, 0, 6, 0.86)),
+    radial-gradient(circle at 62% 34%, rgba(255, 56, 212, 0.22), transparent 23rem),
+    linear-gradient(90deg, rgba(18, 3, 28, 0.12) 0%, rgba(33, 7, 49, 0.54) 42%, rgba(5, 0, 6, 0.88) 100%),
+    linear-gradient(180deg, rgba(25, 5, 41, 0.08), rgba(18, 2, 29, 0.78)),
     url("./assets/karaoke-mic.jpg") left center / cover;
 }
 
@@ -464,7 +468,8 @@ section:not(.hero-sequence) {
   min-height: 112px;
   padding: 16px;
   border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.055);
+  background: rgba(71, 25, 92, 0.18);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
 }
 
 .room-strip span {
@@ -500,9 +505,9 @@ section:not(.hero-sequence) {
   padding-top: clamp(36px, 5vw, 62px) !important;
   padding-bottom: clamp(8px, 1.5vw, 18px) !important;
   background:
-    radial-gradient(circle at 14% 22%, rgba(255, 56, 212, 0.16), transparent 24rem),
-    radial-gradient(circle at 92% 50%, rgba(40, 255, 155, 0.08), transparent 24rem),
-    #080008;
+    radial-gradient(circle at 14% 22%, rgba(255, 56, 212, 0.26), transparent 24rem),
+    radial-gradient(circle at 92% 50%, rgba(132, 63, 255, 0.2), transparent 24rem),
+    linear-gradient(180deg, #14031d, #080008);
 }
 
 .menu .section-heading h2 {
@@ -525,9 +530,9 @@ section:not(.hero-sequence) {
   overflow: hidden;
   border: 1px solid rgba(244, 197, 107, 0.42);
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.025)),
-    radial-gradient(circle at 90% 12%, rgba(255, 56, 212, 0.22), transparent 14rem),
-    #101021;
+    linear-gradient(180deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.035)),
+    radial-gradient(circle at 90% 12%, rgba(255, 56, 212, 0.3), transparent 14rem),
+    #171126;
   box-shadow: 0 30px 110px rgba(0, 0, 0, 0.42);
 }
 
@@ -620,37 +625,41 @@ section:not(.hero-sequence) {
 
 .beer-poster {
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.025)),
-    radial-gradient(circle at 84% 18%, rgba(40, 255, 155, 0.18), transparent 14rem),
-    #101021;
+    linear-gradient(180deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.035)),
+    radial-gradient(circle at 84% 18%, rgba(40, 255, 155, 0.2), transparent 14rem),
+    radial-gradient(circle at 10% 86%, rgba(255, 56, 212, 0.18), transparent 16rem),
+    #171126;
 }
 
 .spirit-poster {
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.025)),
-    radial-gradient(circle at 82% 18%, rgba(244, 197, 107, 0.18), transparent 14rem),
-    #101021;
+    linear-gradient(180deg, rgba(255, 255, 255, 0.095), rgba(255, 255, 255, 0.035)),
+    radial-gradient(circle at 82% 18%, rgba(244, 197, 107, 0.2), transparent 14rem),
+    radial-gradient(circle at 18% 82%, rgba(132, 63, 255, 0.2), transparent 16rem),
+    #171126;
 }
 
 .cocktail-poster {
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.025)),
-    radial-gradient(circle at 80% 15%, rgba(0, 170, 255, 0.18), transparent 14rem),
-    radial-gradient(circle at 18% 28%, rgba(255, 56, 212, 0.2), transparent 16rem),
-    #101021;
+    linear-gradient(180deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.035)),
+    radial-gradient(circle at 80% 15%, rgba(0, 170, 255, 0.2), transparent 14rem),
+    radial-gradient(circle at 18% 28%, rgba(255, 56, 212, 0.3), transparent 16rem),
+    #171126;
 }
 
 .booking {
   min-height: 430px;
   padding-block: clamp(42px, 5vw, 68px) !important;
   background:
-    linear-gradient(180deg, rgba(5, 0, 6, 0.88), rgba(5, 0, 6, 0.96)),
+    radial-gradient(circle at 70% 18%, rgba(255, 56, 212, 0.22), transparent 24rem),
+    radial-gradient(circle at 18% 80%, rgba(132, 63, 255, 0.2), transparent 24rem),
+    linear-gradient(180deg, rgba(18, 3, 28, 0.74), rgba(5, 0, 6, 0.88)),
     url("./assets/vshow-hallway.webp") center / cover;
 }
 
 .booking-card {
-  border: 1px solid var(--line);
-  background: rgba(5, 0, 6, 0.62);
+  border: 1px solid rgba(255, 122, 232, 0.2);
+  background: rgba(29, 6, 45, 0.66);
   padding: clamp(20px, 3vw, 34px);
   backdrop-filter: blur(16px);
 }
