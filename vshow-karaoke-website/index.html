@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="VSHOW Karaoke is a neon private-room karaoke lounge for parties, bottle service, cocktails, and late-night singing."
+    />
+    <title>VSHOW Karaoke Party</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Instrument+Serif:ital@0;1&family=Barlow:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23050006'/%3E%3Ctext x='8' y='42' font-size='28' font-family='Arial' font-weight='700' fill='%23ff38d4'%3EV%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <nav class="site-nav" aria-label="Main navigation">
+      <div class="nav-links">
+        <a href="#rooms">Rooms</a>
+        <a href="#menu">Menu</a>
+        <a href="#book">Book</a>
+      </div>
+    </nav>
+
+    <main id="top">
+      <section class="hero-sequence" aria-label="VSHOW karaoke entrance">
+        <div class="sticky-scene">
+          <video
+            class="hero-video-bg"
+            id="hero-video-bg"
+            autoplay
+            loop
+            muted
+            playsinline
+            aria-hidden="true"
+          ></video>
+          <div class="hero-video-fade top" aria-hidden="true"></div>
+          <div class="hero-video-fade bottom" aria-hidden="true"></div>
+
+          <div class="camera-space" aria-hidden="true">
+            <div class="scene-frame">
+              <img src="./assets/vshow-sign.webp" alt="" />
+              <span class="neon-wash"></span>
+              <span class="edge-fade"></span>
+            </div>
+          </div>
+
+          <div class="hero-content">
+            <p class="kicker">Karaoke Party Lounge</p>
+            <h1>VSHOW Karaoke</h1>
+            <p>
+              Private karaoke rooms, late-night drinks, and a neon-lit lounge made
+              for birthdays, celebrations, and group nights out.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#book">Reserve a room <span aria-hidden="true">-&gt;</span></a>
+              <a class="button ghost liquid-glass-strong" href="#menu">
+                View menu <span aria-hidden="true">-&gt;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="threshold" aria-label="Venue entrance">
+        <div class="threshold-copy">
+          <p class="kicker">Inside VSHOW</p>
+          <h2>A private-room karaoke lounge with a full neon entrance.</h2>
+          <p>
+            Guests arrive through a glowing corridor of color, mirrors, and private
+            room doors. The atmosphere is designed for photos, first songs, and a
+            night that feels special from the hallway in.
+          </p>
+        </div>
+      </section>
+
+      <section class="bottle-service" aria-label="Bottle service">
+        <figure class="bottle-photo">
+          <img src="./assets/vshow-bottles.webp" alt="Hennessy XO bottle service display at VSHOW" />
+        </figure>
+        <div>
+          <p class="kicker">Drinks & Bottle Service</p>
+          <h2>Keep the room stocked while the songs keep going.</h2>
+          <p>
+            Choose from beer, sake, soju, spirits, cocktails, and premium bottle
+            options. VSHOW is built for groups who want the privacy of a room with
+            the energy of a nightclub.
+          </p>
+        </div>
+      </section>
+
+      <section class="rooms compact-rooms" id="rooms" aria-label="Room pricing">
+        <div class="rooms-intro">
+          <p class="kicker">Room Rates 房价</p>
+          <h2>Rooms for every size of party.</h2>
+        </div>
+        <div class="room-strip">
+          <article>
+            <span>小包厢</span>
+            <p>Small Room · 3 ppl</p>
+            <strong>$48/hr</strong>
+          </article>
+          <article>
+            <span>中包厢</span>
+            <p>Medium Room · 5 ppl</p>
+            <strong>$78/hr</strong>
+          </article>
+          <article>
+            <span>大包厢</span>
+            <p>Large Room · 9 ppl</p>
+            <strong>$118/hr</strong>
+          </article>
+          <article class="vip">
+            <span>VIP Room</span>
+            <p>VIP Room · 12 ppl</p>
+            <strong>$198/hr</strong>
+          </article>
+        </div>
+        <p class="room-note">
+          Service charge applies. Extra guests in small, medium, and large rooms are $10/person/hr.
+        </p>
+      </section>
+
+      <section class="menu" id="menu" aria-label="Drinks menu">
+        <div class="section-heading">
+          <p class="kicker">Drinks Menu 酒水单</p>
+          <h2>Beer, spirits, and cocktails for the room.</h2>
+        </div>
+        <div class="poster-menu scroll-stack">
+          <article class="menu-poster beer-poster scroll-stack-card">
+            <div class="poster-top">
+              <p>Beer · Sake · Soju</p>
+              <h3>啤酒 · 清酒 · 烧酒</h3>
+            </div>
+            <div class="poster-list two-col">
+              <p><span>Asahi Super Dry</span><strong>330ml · $8.99</strong></p>
+              <p><span>Corona</span><strong>330ml · $8.99</strong></p>
+              <p><span>Kronenbourg 1664 Blanc</span><strong>330ml · $8.99</strong></p>
+              <p><span>Tsing Tao 青岛</span><strong>330ml · $8.99</strong></p>
+              <p><span>Heineken</span><strong>330ml · $8.99</strong></p>
+              <p><span>Sapporo</span><strong>355ml · $8.99</strong></p>
+              <p><span>R.I.O Cocktail Pack</span><strong>6 pack · $69.99</strong></p>
+              <p><span>Soju 烧酒</span><strong>360ml · $32.99</strong></p>
+            </div>
+            <small>Soju flavors include Original, Fresh, Grape, Apple, Citrus and more.</small>
+          </article>
+
+          <article class="menu-poster spirit-poster scroll-stack-card">
+            <div class="poster-top">
+              <p>Spirits 烈酒</p>
+              <h3>By the ounce</h3>
+            </div>
+            <div class="poster-list two-col">
+              <p><span>Hennessy V.S.O.P.</span><strong>$16.99/oz</strong></p>
+              <p><span>Hennessy X.O.</span><strong>$29.99/oz</strong></p>
+              <p><span>Sierra Tequila</span><strong>$9.99/oz</strong></p>
+              <p><span>Casamigos Reposado</span><strong>$16.99/oz</strong></p>
+              <p><span>Macallan Double Cask</span><strong>$16.99/oz</strong></p>
+              <p><span>Johnnie Walker Black</span><strong>$10.99/oz</strong></p>
+              <p><span>Lu Zhou Lao Jiao 泸州老窖</span><strong>$19.99/oz</strong></p>
+              <p><span>Fen Jiu Blue & White 汾酒</span><strong>$29.99/oz</strong></p>
+              <p><span>Bombay Sapphire Gin</span><strong>$9.99/oz</strong></p>
+              <p><span>Bacardi Superior Rum</span><strong>$9.99/oz</strong></p>
+            </div>
+            <small>All chasers are separate orders. Liquor by ounce; price list above only for liquor.</small>
+          </article>
+
+          <article class="menu-poster cocktail-poster scroll-stack-card">
+            <div class="poster-top">
+              <p>Cocktails 鸡尾酒</p>
+              <h3>$19.99/2oz · $69.99/8oz party size</h3>
+            </div>
+            <div class="poster-list">
+              <p><span>Cuba Peach · 古巴桃</span><strong>Peach liqueur, rum, soda, syrup</strong></p>
+              <p><span>Flaming Lamborghini · 火焰兰博基尼</span><strong>Blue Curacao, coffee liqueur, Irish cream, rum</strong></p>
+              <p><span>Gemini · 双子座</span><strong>Syrup, vodka, Blue Curacao, sparkling</strong></p>
+              <p><span>Iceland · 冰岛</span><strong>Coconut water, Malibu, Blue Curacao, rum</strong></p>
+              <p><span>Long Island Iced Tea · 长岛冰茶</span><strong>Gin, rum, tequila, vodka, whisky, lemon juice, coke</strong></p>
+              <p><span>See You Tomorrow · 明天见</span><strong>Vodka, peach liqueur, cranberry juice, orange juice, Sprite</strong></p>
+              <p><span>Sex On The Beach · 激情海岸</span><strong>Vodka, peach liqueur, cranberry juice, orange juice</strong></p>
+            </div>
+            <small>Flaming Lamborghini and Jäger Bomb are not available for party size.</small>
+          </article>
+        </div>
+      </section>
+
+      <section class="booking" id="book" aria-label="Book a room">
+        <div>
+          <p class="kicker">Reservations</p>
+          <h2>Book your private karaoke room.</h2>
+          <p>
+            Reserve ahead for birthdays, group nights, VIP rooms, and bottle service.
+            Contact VSHOW to confirm room availability, party size, and arrival time.
+          </p>
+        </div>
+        <div class="booking-card">
+          <a class="button primary" href="tel:+10000000000">Call VSHOW</a>
+          <a class="button ghost" href="mailto:booking@vshowkaraoke.example">Request a booking</a>
+          <span>Private rooms · VIP room · Drinks menu · Bottle service</span>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@1/dist/hls.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
